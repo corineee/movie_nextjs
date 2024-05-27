@@ -1,3 +1,4 @@
+import "../styles/global.css"
 import { Metadata } from "next"
 import Navigation from "../components/navigation"
 
@@ -16,7 +17,7 @@ export default function Layout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning={true}>
         <Navigation />
         {children}
       </body>

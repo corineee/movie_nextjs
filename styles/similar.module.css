@@ -1,0 +1,24 @@
+.similar {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 15px;
+    cursor: pointer;
+    place-items: center;
+    width: 100px;
+}
+
+.similar img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.similar img {
+    opacity: 0.7;
+}
+
+.similar img:hover {
+    opacity: 1;
+}
