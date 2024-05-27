@@ -2,13 +2,13 @@
 
 import { getMovie } from "./movie-info";
 import styles from "../styles/movie-info.module.css";
-import { API_URL } from "../app/page";
 import Credit from "./credit";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
+import { API_URL } from "../app/(home)/page";
 
 export async function getCredit(id: string) {
   const response = await fetch(`${API_URL}/${id}/credits`);
